@@ -8,7 +8,7 @@ export default {
       schedule: {
         name: '${self:service}-${opt:stage, "dev"}-schedule-hoursReminder',
         description: 'Sends emails to people to remind them to log hours',
-        cron: ['cron(0 12 L * ? *)'],
+        rate: ['cron(0 12 L * ? *)'],
         enabled: true
       }
     }
